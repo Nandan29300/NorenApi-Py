@@ -393,7 +393,7 @@ Request Details :
 |Python Parameters|Json Fields|Possible value|Description|
 | --- | --- | --- | ---|
 |orderno|norenordno*||Noren order number, which needs to be modified|
-|product_type|prd*|H / B |Allowed for only H and B products (Cover order and bracket order)|
+|product_type|[prd*](#md-product_type)|H / B |Allowed for only H and B products (Cover order and bracket order)|
 |Handled in Python wrapper|uid*||User id of the logged in user.|
 
 Response Details :
@@ -430,7 +430,7 @@ Request Details :
 |quantity|qty*||Quantity to be converted.|
 |Handled in Python wrapper|uid*||User id of the logged in user.|
 |Handled in Python wrapper|actid*||Account id|
-|new_product_type|prd*||Product to which the user wants to convert position. |
+|new_product_type|[prd*](#md-product_type)||Product to which the user wants to convert position. |
 |previous_product_type|prevprd*||Original product of the position.|
 |buy_or_sell|trantype*||Transaction type|
 |day_or_cf|postype*|Day / CF|Converting Day or Carry forward position|
@@ -862,7 +862,7 @@ Request Details :
 | --- | --- | --- | ---|
 |Handled in Python wrapper|uid*||Logged in User Id|
 |Handled in Python wrapper|actid*||Account id of the logged in user.|
-|product_type|prd*||Product name|
+|product_type|[prd*](#md-product_type)||Product name|
 
 Response Details :
 Response data will be in json format with below fields in case of Success:
@@ -1255,7 +1255,7 @@ Position structure as follows:
 
 |Json Fields|Possible value|Description|
 | --- | --- | ---|
-| prd | C / M / H  | Product | 
+| [prd](#md-product_type) | C / M / H  | Product | 
 |exch|NFO, CDS, MCX ...|Exchange|
 |instname|FUTSTK, FUTIDX, OPTSTK, FUTCUR...|Instrument name|
 |symname|USDINR, ACC, ABB,NIFTY.. |Symbol name|
@@ -2031,7 +2031,7 @@ Order Update subscription Updates :
  | tsym |   | Trading symbol | 
  | qty |   | Order quantity | 
  | prc |   | Order Price | 
- | prd |   | Product | 
+ | [prd](#md-product_type) |   | Product | 
  | status |   | Order status (New, Replaced,  Complete, Rejected etc) | 
  | reporttype |   | Order event for which this message is sent out. (Fill, Rejected, Canceled) | 
  | trantype |   | Order transaction type, buy or sell | 
