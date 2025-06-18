@@ -250,7 +250,7 @@ Request Details :
 |price|prc*||Order Price|
 |trigger_price|trgprc||Only to be sent in case of SL / SL-M order.|
 |discloseqty|dscqty||Disclosed quantity (Max 10% for NSE, and 50% for MCX)|
-|product_type|- [prd*](#md-product_type)|C / M / H|Product name (Select from ‘prarr’ Array provided in User Details response, and if same is allowed for selected, exchange. Show product display name, for user to select, and send corresponding prd in API call)|
+|product_type| [prd*](#md-product_type)|C / M / H|Product name (Select from ‘prarr’ Array provided in User Details response, and if same is allowed for selected, exchange. Show product display name, for user to select, and send corresponding prd in API call)|
 |buy_or_sell|trantype*|B / S|B -> BUY, S -> SELL|
 |price_type|prctyp*|LMT / MKT  / SL-LMT / SL-MKT / DS / 2L / 3L||||
 |retention|ret*|DAY / EOS / IOC |Retention type (Show options as per allowed exchanges) |
